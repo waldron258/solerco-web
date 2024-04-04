@@ -7,7 +7,15 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      rymaneco: ['"RymanEco-Regular"'],
+      yesevaone: ['"YesevaOne-Regular"'],
+      phetsarath: ['"Phetsarath-Regular"'],
+    },
     extend: {
+      colors: {
+        "basil-green": "#555E30",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
