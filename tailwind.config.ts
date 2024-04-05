@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,11 +9,9 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      rymaneco: ["'RymanEco-Regular', sans-serif"],
-      yesevaone: ["'YesevaOne-Regular', sans-serif"],
-      phetsarath: ["'Phetsarath-Regular', sans-serif"],
-      phetsarathb: ["'Phetsarath-Bold', sans-serif"],
-      yeservaone: ["'YesevaOne-Regular', sans-serif"],
+      rymaneco: ["var(--font-rymaneco)"],
+      yesevaone: ["var(--font-yesevaone)"],
+      phetsarath: ["var(--font-phetsarath)"],
       secularone: ["'Secular One', sans-serif"],
     },
     extend: {

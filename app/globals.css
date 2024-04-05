@@ -1,33 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@font-face {
-  font-family: "RymanEco-Regular";
-  src: local("RymanEco-Regular"),
-    url(./Fonts/RymanEco-Regular.otf) format("truetype");
-}
-
-@font-face {
-  font-family: "YesevaOne-Regular";
-  src: local("YesevaOne-Regular"),
-    url(./Fonts/YesevaOne-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Phetsarath-Regular";
-  src: local("Phetsarath-Regular"),
-    url(./fonts/Phetsarath-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Phetsarath-Bold";
-  src: local("Phetsarath-Bold"),
-    url(./Fonts/Phetsarath-Bold.ttf) format("truetype");
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Rozha+One&family=Secular+One&display=swap");
 
 * {
   font-family: "Phetsarath-Regular", sans-serif;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

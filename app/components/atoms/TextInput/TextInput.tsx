@@ -14,6 +14,7 @@ export default function TextInput(props: ITextInput) {
         id={id}
         name={id}
         type="text"
+        autoComplete="off"
         className={`${
           className ? className : ""
         } text-sm text-white px-4 py-2 bg-transparent rounded-3xl border-solid border-2 border-white focus:outline-none focus:border-sweet-buttermilk transition-all duration-300 ease-in-out`}

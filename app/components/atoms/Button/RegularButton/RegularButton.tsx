@@ -7,7 +7,7 @@ export default function RegularButton(props: IButton) {
     <button
       className={`${
         REGULAR_BUTTON_VARIANTS[variant as keyof typeof REGULAR_BUTTON_VARIANTS]
-      } bg-transparent rounded-3xl px-6 py-1 font-phetsarathb font-bold text-lg w-auto transition-all duration-300 ease-in-out`}
+      } bg-transparent rounded-3xl px-6 py-1 font-phetsarath font-bold text-lg w-auto transition-all duration-300 ease-in-out`}
       onClick={onClick}
       disabled={disabled}
     >
