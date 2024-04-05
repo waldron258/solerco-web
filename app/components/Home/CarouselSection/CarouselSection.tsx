@@ -30,20 +30,20 @@ interface ISlide {
   url: string;
 }
 
-interface ICarouselContainer {
+interface ICarouselSection {
   slides: ISlide[];
 }
 
-export default function CarouselContainer(props: ICarouselContainer) {
+export default function CarouselSection(props: ICarouselSection) {
   const { slides } = props;
 
   return (
     <Carousel
       responsive={responsive}
       showDots
-      // autoPlay
+      autoPlay
       infinite
-      // autoPlaySpeed={5000}
+      autoPlaySpeed={5000}
       containerClass="w-full"
     >
       {slides.map((slide, key) => {
@@ -52,7 +52,7 @@ export default function CarouselContainer(props: ICarouselContainer) {
             key={key}
             className="w-full min-h-screen flex items-center justify-start bg-cover bg-center bg-no-repeat bg-fixed"
             style={{
-              backgroundImage: `url(${slide.url})`,
+              backgroundImage: `linear-gradient(180deg, rgba(229, 229, 229, 0) 0%, rgba(0, 0, 0, 0.5) 90%), url(${slide.url})`,
             }}
           >
             <div className="pl-[136px] max-w-[700px]">
@@ -67,25 +67,5 @@ export default function CarouselContainer(props: ICarouselContainer) {
         );
       })}
     </Carousel>
-    // <Carousel
-    //   swipeable={false}
-    //   draggable={false}
-    //   showDots={true}
-    //   responsive={responsive}
-    //   infinite={true}
-    //   autoPlaySpeed={1000}
-    //   keyBoardControl={true}
-    //   customTransition="all .5"
-    //   transitionDuration={500}
-    //   removeArrowOnDeviceType={["tablet", "mobile"]}
-    //   dotListClass="custom-dot-list-style"
-
-    // >
-    //   <div>Item 1</div>
-    //   <div>Item 2</div>
-    //   <div>Item 3</div>
-    //   <div>Item 4</div>
-    // </Carousel>
   );
-  //
 }

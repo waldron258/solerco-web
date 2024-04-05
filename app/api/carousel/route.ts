@@ -1,8 +1,6 @@
 "use server";
 import { addDocument, getCollection } from "@/app/lib/firebase/firestore";
 
-import type { NextApiRequest, NextApiResponse } from "next";
-
 export async function GET() {
   try {
     const carouselItems = await getCollection("carousel");

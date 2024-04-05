@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-import CartIcon from "@/app/assets/navbar/cart.svg";
+import CartIcon from "@/app/assets/icons/navbar/cart.svg";
 import { usePathname } from "next/navigation";
 
 interface INavBar {}

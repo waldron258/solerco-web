@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "react-multi-carousel/lib/styles.css";
-import NavBar from "./components/NavBar";
-
-const inter = Inter({ subsets: ["latin"] });
+import NavBar from "./components/organisms/NavBar";
+import Footer from "./components/organisms/Footer";
 
 export const metadata: Metadata = {
   title: "SolerCo",
-  description: "Proyecto personal con fines profesionales",
+  description: "Proyecto personal con fines profesionales.",
 };
 
 export default function RootLayout({
@@ -18,9 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

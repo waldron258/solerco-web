@@ -17,7 +17,7 @@
 @font-face {
   font-family: "Phetsarath-Regular";
   src: local("Phetsarath-Regular"),
-    url(./Fonts/Phetsarath-Regular.ttf) format("truetype");
+    url(./fonts/Phetsarath-Regular.ttf) format("truetype");
 }
 
 @font-face {
