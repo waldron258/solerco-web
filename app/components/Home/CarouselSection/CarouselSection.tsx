@@ -27,7 +27,7 @@ const responsive = {
 interface ISlide {
   title: string;
   description: string;
-  url: string;
+  image_url: string;
 }
 
 interface ICarouselSection {
@@ -50,16 +50,16 @@ export default function CarouselSection(props: ICarouselSection) {
         return (
           <div
             key={key}
-            className="w-full min-h-screen flex items-center justify-start bg-cover bg-center bg-no-repeat bg-fixed"
+            className="w-full min-h-screen flex items-center justify-center lg:justify-start bg-cover bg-center bg-no-repeat bg-fixed"
             style={{
-              backgroundImage: `linear-gradient(180deg, rgba(229, 229, 229, 0) 0%, rgba(0, 0, 0, 0.5) 90%), url(${slide.url})`,
+              backgroundImage: `linear-gradient(180deg, rgba(229, 229, 229, 0) 0%, rgba(0, 0, 0, 0.5) 60%), url(${slide.image_url})`,
             }}
           >
-            <div className="pl-[136px] max-w-[700px]">
-              <h1 className="font-yesevaone text-9xl text-white">
+            <div className="text-center lg:text-start lg:pl-[136px] md:max-w-[700px]">
+              <h1 className="font-yesevaone text-6xl md:text-8xl lg:text-9xl text-white px-[31%] md:p-0 mb-2 md:mb-0">
                 {slide.title}
               </h1>
-              <p className="font-phetsarath text-2xl text-white">
+              <p className="font-phetsarath text-lg md:text-xl lg:text-2xl text-white px-[20%] md:p-0">
                 {slide.description}
               </p>
             </div>

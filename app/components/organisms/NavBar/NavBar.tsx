@@ -25,7 +25,7 @@ export default function NavBar(props: INavBar) {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -46,14 +46,14 @@ export default function NavBar(props: INavBar) {
             />
           </svg>
         </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse ">
+        <div className="hidden w-full lg:block lg:w-auto" id="navbar-default">
+          <ul className="font-medium flex flex-col lg:flex-row lg:space-x-8 rtl:space-x-reverse ">
             <li>
               <Link
                 href="/"
                 className={`${
                   pathname === "/" ? "active " : ""
-                }block py-0 text-white hover:bg-transparent/[0.3] md:text-lg md:rounded-2xl md:bg-transparent md:px-3 md:py-1 md:hover:bg-transparent/[0.3] [&.active]:md:bg-transparent/[0.3]`}
+                }block py-0 text-white hover:bg-transparent/[0.3] lg:text-lg lg:rounded-2xl lg:bg-transparent lg:px-3 lg:py-1 lg:hover:bg-transparent/[0.3] [&.active]:lg:bg-transparent/[0.3]`}
               >
                 Inicio
               </Link>
@@ -63,7 +63,7 @@ export default function NavBar(props: INavBar) {
                 href="/about"
                 className={`${
                   pathname === "/about" ? "active " : ""
-                }block py-0 text-white hover:bg-transparent/[0.3] md:text-lg md:rounded-2xl md:bg-transparent md:px-3 md:py-1 md:hover:bg-transparent/[0.3] [&.active]:md:bg-transparent/[0.3]`}
+                }block py-0 text-white hover:bg-transparent/[0.3] lg:text-lg lg:rounded-2xl lg:bg-transparent lg:px-3 lg:py-1 lg:hover:bg-transparent/[0.3] [&.active]:lg:bg-transparent/[0.3]`}
               >
                 Conócenos
               </Link>
@@ -73,7 +73,7 @@ export default function NavBar(props: INavBar) {
                 href="/shop"
                 className={`${
                   pathname === "/shop" ? "active " : ""
-                }block py-0 text-white hover:bg-transparent/[0.3] md:text-lg md:rounded-2xl md:bg-transparent md:px-3 md:py-1 md:hover:bg-transparent/[0.3] [&.active]:md:bg-transparent/[0.3]`}
+                }block py-0 text-white hover:bg-transparent/[0.3] lg:text-lg lg:rounded-2xl lg:bg-transparent lg:px-3 lg:py-1 lg:hover:bg-transparent/[0.3] [&.active]:lg:bg-transparent/[0.3]`}
               >
                 Tienda
               </Link>
@@ -83,7 +83,7 @@ export default function NavBar(props: INavBar) {
                 href="/cart"
                 className={`${
                   pathname === "/cart" ? "active " : ""
-                }block py-0 text-white hover:bg-transparent/[0.3] md:text-lg md:rounded-2xl md:bg-transparent md:px-3 md:hover:bg-transparent/[0.3] [&.active]:md:bg-transparent/[0.3]`}
+                }block py-0 text-white hover:bg-transparent/[0.3] lg:text-lg lg:rounded-2xl lg:bg-transparent lg:px-3 lg:hover:bg-transparent/[0.3] [&.active]:lg:bg-transparent/[0.3]`}
               >
                 <CartIcon className="h-9 w-7" />
               </Link>

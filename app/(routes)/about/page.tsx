@@ -1,6 +1,8 @@
 import About from "@/app/components/About";
 
-export default function AboutPage() {
+interface IAdminPage {}
+
+export default function AdminPage(props: IAdminPage) {
   return (
     <main>
       <About />

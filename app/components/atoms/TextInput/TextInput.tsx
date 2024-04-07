@@ -1,7 +1,7 @@
 import { ITextInput } from "@/app/interfaces/app/components/atoms/textInputInterface";
 
 export default function TextInput(props: ITextInput) {
-  const { id, label, className } = props;
+  const { id, label, value, type, onChange, className } = props;
 
   return (
     <div className="flex flex-col w-full">
@@ -13,7 +13,9 @@ export default function TextInput(props: ITextInput) {
       <input
         id={id}
         name={id}
-        type="text"
+        value={value}
+        onChange={onChange}
+        type={type ? type : "text"}
         autoComplete="off"
         className={`${
           className ? className : ""

@@ -14,22 +14,6 @@ export default function Home(props: IHome) {
   const [carouselItems, setCarouselItems] = useState([]);
   const [kitItems, setKitItems] = useState([]);
 
-  //POST SOME SHIT
-  // const res = await fetch("/api/carousel", {
-  //   method: "POST",
-  //   body: JSON.stringify({
-  //     title: "title",
-  //     description: "desck",
-  //     url: "url",
-  //   }),
-  // });
-  // if (res.ok) {
-  //   const data = await res.json();
-  //   console.log(data);
-  // } else {
-  //   console.error("Failed to fetch carousel items");
-  // }
-
   const fetchCarouselItems = useCallback(async () => {
     try {
       const res = await fetch("/api/carousel");

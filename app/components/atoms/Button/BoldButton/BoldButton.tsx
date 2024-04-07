@@ -8,7 +8,7 @@ export default function BoldButton(props: IButton) {
     <button
       className={`${
         BOLD_BUTTON_VARIANTS[variant as keyof typeof BOLD_BUTTON_VARIANTS]
-      } rounded-3xl px-6 py-1 font-phetsarath font-bold text-lg w-auto transition-all duration-300 ease-in-out`}
+      } rounded-3xl px-6 py-2 font-phetsarath font-bold text-lg w-auto transition-all duration-300 ease-in-out`}
       onClick={onClick}
       disabled={disabled}
     >

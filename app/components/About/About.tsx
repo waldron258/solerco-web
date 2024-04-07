@@ -9,6 +9,8 @@ export default function About(props: IAbout) {
       style={{
         backgroundImage: `url('/assets/backgrounds/about/about.png')`,
       }}
-    ></div>
+    >
+      a
+    </div>
   );
 }
