@@ -7,25 +7,15 @@ export async function POST(request: Request) {
     const body = await request.json();
     const response = await axios.post("http://127.0.0.1:8000/api/login/", body);
 
-    // const res = await fetch("http://127.0.0.1:8000/api/login/", {
-    //   method: "POST",
-    //   body: request,
-    // });
-    // const response = await res.json();
-    return Response.json(response.data);
-  } catch (error) {
-    console.error("Error loging user: ", error);
-    return Response.json({ error: "Unable to login" });
+    return Response.json({
+      data: response.data,
+      status: response.status,
+      statusText: response.statusText,
+    });
+  } catch (error: any) {
+    return new Response(`error: ${error.message}`, {
+      status: error.response?.status,
+      statusText: error.response?.statusText,
+    });
   }
 }
-
-// export async function POST(request: Request) {
-//   try {
-//     const body = await request.json();
-//     await addDocument("carousel", body);
-//     return Response.json({ message: "Carousel item created successfully" });
-//   } catch (error) {
-//     console.error("Error creating carousel item: ", error);
-//     return Response.json({ error: "Unable to create carousel item" });
-//   }
-// }

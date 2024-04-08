@@ -29,13 +29,7 @@ export default function Form(props: IForm) {
   });
 
   const handleSubmit = async (data: IFormikForm) => {
-    const res = await axios.post("/api/login", data).then((res) => res.data);
-    console.log(res);
-    // if (res.ok) {
-    //   const data = await res.json();
-    // } else {
-    //   console.error("Failed to login");
-    // }
+    const res = await axios.post("/api/login", data);
   };
 
   const formik = useFormik<IFormikForm>({
